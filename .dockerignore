@@ -1,0 +1,45 @@
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Package files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Version control
+.git
+.gitignore
+
+# Databases
+*.sqlite3
+db.sqlite3
+
+# Environment files
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
