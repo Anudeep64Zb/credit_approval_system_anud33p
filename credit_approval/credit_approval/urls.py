@@ -7,14 +7,17 @@ def home_view(request):
         "message": "Credit Approval System API",
         "endpoints": {
             "admin": "/admin/",
-            "customers": "/api/customers/",
-            "loans": "/api/loans/"
+            "register": "/register/",
+            "check_eligibility": "/check-eligibility/",
+            "create_loan": "/create-loan/",
+            "view_loan": "/view-loan/<loan_id>/",
+            "view_loans": "/view-loans/<customer_id>/"
         }
     })
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
-    path('api/customers/', include('customers.urls')),
-    path('api/loans/', include('loans.urls')),
+    path('', include('customers.urls')),
+    path('', include('loans.urls')),
 ]
